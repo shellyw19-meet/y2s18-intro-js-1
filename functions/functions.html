@@ -15,9 +15,28 @@ function isLetter(char) {
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
 
-// Write your isPalindrome function here!
-
+function isPalindrom(word)
+{
+	var i = 0;
+	var reversed = word.split("").reverse("").join("");
+	for(i=0;<word.length;i++)
+	{
+		if(word[i]!=reversed[i])
+	{
+		return false;
+	}
+}
+var word = prompt("Enter a word");
+if (isPalindrom(word))
+{
+	alert("This is a palindrom");
+} else {
+	alert("This is not a polindrom")
+}
     </script>
+
+
+
 </body>
 
 </html>

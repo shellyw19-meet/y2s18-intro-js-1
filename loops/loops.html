@@ -9,17 +9,26 @@
     <h1>Guessing Game</h1>
 
     <script>
-/* STARTING CODE */
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * Math.floor(max - min)) + min;
-}
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * Math.floor(max - min)) + min;
+        }
+        var areWeDone = false;
+        var randomInt = getRandomInt(1, 100);
+        while (!areWeDone) {
+            var number = prompt("choose a number between 1 to 100");
+            if (number > randomInt) {
+                alert("too high");
+            } else if (number < randomInt) {
+                alert("too low");
+            } else {
+                areWeDone = true
+                alert("correct!")
+            }
 
-var randomInt = getRandomInt(1, 100);
-/* END STARTING CODE */
 
-// your code goes under here
 
+        }
     </script>
 </body>
 
-</html>
+</html
